@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
 
   use('github/copilot.vim')
 
+  use('Civitasv/cmake-tools.nvim')
+
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v1.x',

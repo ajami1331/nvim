@@ -13,3 +13,28 @@ require("cmake-tools").setup {
     long = { show = true, max_length = 40 }
   }
 }
+
+
+vim.keymap.set("n", "<leader>cm", function()
+  require("cmake-tools").build({})
+end)
+
+vim.keymap.set("n", "<leader>cr", function()
+  require("cmake-tools").run({})
+end)
+
+vim.keymap.set("n", "<leader>cd", function()
+  require("cmake-tools").debug({})
+end)
+
+vim.keymap.set("n", "<leader>cc", function()
+  require("cmake-tools").clean({})
+end)
+
+vim.keymap.set("n", "<leader>ct", function()
+  require("cmake-tools").test({})
+end)
+
+vim.keymap.set("n", "<leader>cs", function()
+  require("cmake-tools").stop({})
+end)

@@ -37,6 +37,8 @@ return require('packer').startup(function(use)
     {'neovim/nvim-lspconfig'},             -- Required
     {'williamboman/mason.nvim'},           -- Optional
     {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    {'mfussenegger/nvim-dap'},
+    {'jay-babu/mason-nvim-dap.nvim'},
 
     -- Autocompletion
     {'hrsh7th/nvim-cmp'},         -- Required
@@ -50,5 +52,6 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},             -- Required
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
-}
+  }
+
 end)

@@ -5,9 +5,6 @@ local lsp = require('lsp-zero').preset({
   suggest_lsp_servers = false,
 })
 
--- (Optional) Configure lua language server for neovim
-lsp.nvim_workspace()
-
 lsp.setup()
 
 require("mason-nvim-dap").setup({

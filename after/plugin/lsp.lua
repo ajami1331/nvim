@@ -1,12 +1,2 @@
-local lsp = require('lsp-zero').preset({
-  name = 'minimal',
-  set_lsp_keymaps = true,
-  manage_nvim_cmp = true,
-  suggest_lsp_servers = false,
-})
-
-lsp.setup()
-
-require("mason-nvim-dap").setup({
-  automatic_setup = true,
-})
+require('lsp-zero')
+require('lspconfig').intelephense.setup({})

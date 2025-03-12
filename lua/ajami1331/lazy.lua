@@ -58,5 +58,6 @@ require("lazy").setup({
         {'rafamadriz/friendly-snippets'}, -- Optional
     }
     };
-    
+    { 'nvim-tree/nvim-tree.lua', opt = {} };
+    { 'nvim-tree/nvim-web-devicons', opt = {} };
 })

@@ -8,7 +8,15 @@ require('mason-lspconfig').setup(
     
 local lspconfig = require('lspconfig')
 lspconfig.intelephense.setup({})
-lspconfig.lua_ls.setup({})
+lspconfig.lua_ls.setup({
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    }
+})
 lspconfig.ts_ls.setup({})
 lspconfig.rust_analyzer.setup({})
 lspconfig.clangd.setup({})

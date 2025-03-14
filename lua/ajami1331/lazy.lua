@@ -24,14 +24,14 @@ require("lazy").setup({
             vim.cmd('colorscheme rose-pine')
         end
     };
-    
+
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'};
-    
+
     'theprimeagen/harpoon';
     'tpope/vim-fugitive';
-    
+
     'github/copilot.vim';
-    
+
     'Civitasv/cmake-tools.nvim';
     
     {
@@ -44,7 +44,7 @@ require("lazy").setup({
         {'williamboman/mason-lspconfig.nvim'}, -- Optional
         {'mfussenegger/nvim-dap'},
         {'jay-babu/mason-nvim-dap.nvim'},
-    
+
         -- Autocompletion
         {'hrsh7th/nvim-cmp'},         -- Required
         {'hrsh7th/cmp-nvim-lsp'},     -- Required
@@ -52,7 +52,7 @@ require("lazy").setup({
         {'hrsh7th/cmp-path'},         -- Optional
         {'saadparwaiz1/cmp_luasnip'}, -- Optional
         {'hrsh7th/cmp-nvim-lua'},     -- Optional
-    
+
         -- Snippets
         {'L3MON4D3/LuaSnip'},             -- Required
         {'rafamadriz/friendly-snippets'}, -- Optional
